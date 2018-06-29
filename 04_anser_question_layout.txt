@@ -1,0 +1,40 @@
+﻿1. What is the best environment configuration for development ? 
+   - nên viết css vào file _extend.less hoặc _theme.less thay vì ghi đè một file a.less nào đó.
+   - tạo mới một file xml nào đó để custom thay vì ghi custom or ghi đè .phtml templates. sủ dụng các thẻ: <move> , <referenceBlock>, <referenceContainer> với before hoạcư after để hỗ trợ.
+   - Tái sử dụng các mẫu có sẵn và thiết kế từ các tệp Magento mặc định bằng cách tham chiếu các mẫu .phtml hiện có (các gợi ý mẫu có thể giúp) hoặc sao chép HTML đánh dấu vào các mẫu tùy chỉnh của bạn.
+   - sử dụng thư mục <theme_dir>/etc/view.xml để thay đổi size or type của ảnh
+   - nếu bạn cần thay đổi ngôn ngữ trên web site nên thêm file custom CSV thay vì phải ghi đè .phtml templates.
+
+2. Describe role and purpose of each part in a Magento module ?
+-Api: Chứa các interface.
+-Block: sinh ra các page, mỗi block là một phần của trang.
+-Console:
+-Controller: cần điều khiển. việc gọi dữ liệu và đổ ra.
+-Model: implement các interface từ  Api, Xử lý logic data.
+-Helper: Chứa các class uility.
+-Customer data: flush caching.
+-Observer: Chứa Observer parttern.
+-Setup: hỗ trợ SQL.
+-Test: chứa các unit test- test trên đơn vị function.
+-UI: component → block dùng cho admin. cấu trúc như kiểu: Module->UL->module->Ui..
+-View: chứa các template layout.
+-etc: Khái báo các module;
+-i18n: translate.
+
+3.Difference between extending and overriding layout? When we can't use extending?
+- Extending: việc kế thừa lại layout và xử lý.
+- Overidding: việc ghi đè lên layout đã có sẵn,và coi như đập đi làm lại.
+Nếu như việc Extend một layout quá lớn và cần chỉnh sửa quá nhiều sẽ làm chậm hiệu suất của của việc custom từ đó không nên dùng extend mà nên overriding lại toàn bộ.
+
+4.What is the chain of theme fallback/overriding in Magento 2 ?
+- chain of theme fallback/overriding muốn nói đến vấn đề về độ ưu tiên trong việc custom lại một một theme. nó sẽ ưu tiên các file trong theme custom hiện tại đầu tiên rồi đến trình tự các file ở tư mục cha dần.
+
+5.Where to look at when the page is blank or have fatal error?
+- Khi một page trống hoặc có fatal error thì hãy nên check 3 file: debug.log, system.log, exception.log  trong thư mục var/log
+
+6.Where to look at when we have a Magento error message?
+- Các lỗi thông thường của magento có thể được xem trong thư mục var/report.
+
+7.Take a screenshot of the back trace data you got when you print magento back trace
+8. 
+

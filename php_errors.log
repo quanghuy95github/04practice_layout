@@ -713,3 +713,27 @@ Stack trace:
 [26-Jun-2018 08:19:08 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
 [26-Jun-2018 08:19:08 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
 [26-Jun-2018 08:19:08 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[27-Jun-2018 08:10:42 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[27-Jun-2018 08:10:42 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[27-Jun-2018 08:10:42 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[27-Jun-2018 08:10:42 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[27-Jun-2018 09:34:44 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento2_data/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy] in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Directo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Directo...')
+#2 [internal function]: spl_autoload_call('Magento\\Directo...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Directo...')
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Directo...')
+#5 /var/www/html/magento2_data/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Interception\Config\Config- in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php on line 115
+[27-Jun-2018 09:52:36 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento2_data/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy] in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Directo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Directo...')
+#2 [internal function]: spl_autoload_call('Magento\\Directo...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Directo...')
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Directo...')
+#5 /var/www/html/magento2_data/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Interception\Config\Config- in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php on line 115
+[28-Jun-2018 03:47:25 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[28-Jun-2018 03:47:25 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[28-Jun-2018 03:47:25 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[28-Jun-2018 03:47:25 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646

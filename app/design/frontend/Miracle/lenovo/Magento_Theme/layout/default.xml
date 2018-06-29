@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="default_head_blocks"/>
+    <body>
+        <referenceContainer name="header.container">
+            <referenceContainer name="header-wrapper" htmlClass="header container" htmlTag="div">
+                <referenceBlock name="logo">
+                    <arguments>
+                        <argument name="logo_file" xsi:type="string">images/logo_macfixit.png</argument>
+                        <argument name="logo_img_width" xsi:type="number">155</argument>
+                        <argument name="logo_img_height" xsi:type="number">58</argument>
+                    </arguments>
+                </referenceBlock>
+                <referenceContainer name="header.panel">
+                    <referenceBlock name="top.links" remove="true"></referenceBlock>
+                    <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                        <arguments>
+                            <argument name="css_class" xsi:type="string">header links</argument>
+                        </arguments>
+                    </block>
+                </referenceContainer>
+            </referenceContainer>
+            <referenceBlock class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                <block class="Magento\Module\Block\Class" name="block">
+                    <action method="setText">
+                        <argument name="text" translate="true" xsi:type="string">Welcome to Macfixit Australia!</argument>
+                    </action>
+                    <action method="setEnabled">
+                        <argument name="enabled" xsi:type="boolean">true</argument>
+                    </action>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-link2">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">VỀ CHÚNG TÔI</argument>
+                        <argument name="path" xsi:type="string">ve-chung-toi</argument>
+                        <!-- <argument name="css_class" xsi:type="string">header links</argument> -->
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-link3">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">TÀI KHOẢN CỦA TÔI</argument>
+                        <argument name="path" xsi:type="string">customer/account/</argument>
+                        <!-- <argument name="css_class" xsi:type="string">header links</argument> -->
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-link4">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">BLOG</argument>
+                        <argument name="path" xsi:type="string">blog</argument>
+                        <!-- <argument name="css_class" xsi:type="string">header links</argument> -->
+                    </arguments>
+                </block>      
+            </referenceBlock>
+        </referenceContainer>
+        <referenceBlock name="footer_links" remove="true"></referenceBlock>
+        <referenceBlock name="copyright" remove="true"></referenceBlock>
+        <referenceBlock name="report.bugs" remove="true"></referenceBlock>
+        <referenceBlock name="form.subscribe" remove="true"></referenceBlock>
+        <container name="our-satisfaction-guarantee" before="footer-container" htmlTag="div">
+            <block class="Magento\Cms\Block\Block" name="Our-Satisfaction-Guarantee" before="footer-container">
+                <arguments>
+                  <argument name="block_id" xsi:type="string">Our-Satisfaction-Guarantee</argument>
+                </arguments>
+            </block>
+        </container>
+        <referenceContainer name="footer-container" htmlClass="footer-container ">
+            <referenceContainer name="footer" htmlClass="footer">
+                <container name="footer-middle" htmlClass="footer-middle" htmlTag="div">
+                    <container name="container-footer" htmlClass="container" htmlTag="div">
+                        <container name="row-footer" htmlClass="row" htmlTag="div">
+                            <block class="Miracle\Helloworld\Block\Helloworld" name="content.footer" template="content_footer.phtml"></block>
+                        </container>
+                    </container>
+                </container>
+            </referenceContainer>
+        </referenceContainer>
+        <referenceContainer name="div.sidebar.additional" remove="true"></referenceContainer>
+    </body>
+</page>
