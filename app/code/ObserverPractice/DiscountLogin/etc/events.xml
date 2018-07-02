@@ -9,4 +9,7 @@
     <event name="Customer_Login">
         <observer name="customer_login_observer" instance="ObserverPractice\DiscountLogin\Observer\CustomerLogin" />
     </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="customer_custom_price" instance="ObserverPractice\DiscountLogin\Observer\CustomPrice" />
+    </event>
 </config>
