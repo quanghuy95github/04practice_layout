@@ -737,3 +737,120 @@ Stack trace:
 [28-Jun-2018 03:47:25 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
 [28-Jun-2018 03:47:25 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
 [28-Jun-2018 03:47:25 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[02-Jul-2018 01:51:49 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:13 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:16 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:18 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:21 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:23 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:24 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:24 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 01:52:26 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 03:14:06 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 04:56:06 UTC] PHP Fatal error:  Uncaught Magento\Framework\Exception\FileSystemException: The directory "/var/www/html/magento2_data/generated/code/Magento/Wishlist/Model/ResourceModel/Item/Option" cannot be deleted Warning!rmdir(/var/www/html/magento2_data/generated/code/Magento/Wishlist/Model/ResourceModel/Item/Option): No such file or directory in /var/www/html/magento2_data/vendor/magento/framework/Filesystem/Driver/File.php:410
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Filesystem/Driver/File.php(403): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/var/www/html/m...')
+#1 /var/www/html/magento2_data/vendor/magento/framework/Filesystem/Driver/File.php(403): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/framework/Filesystem/Driver/File.php(403): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/var/www/html/m...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Filesystem/Driver/File.php(403): Magento\Fr in /var/www/html/magento2_data/vendor/magento/framework/Filesystem/Driver/File.php on line 410
+[02-Jul-2018 05:00:28 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[02-Jul-2018 05:14:40 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento2_data/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php( in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php on line 115
+[02-Jul-2018 05:33:54 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento2_data/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php( in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php on line 115
+[02-Jul-2018 07:30:27 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[02-Jul-2018 07:30:27 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[02-Jul-2018 07:30:27 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[02-Jul-2018 07:30:27 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[02-Jul-2018 08:10:05 UTC] PHP Fatal error:  Class ObserverPractice\DiscountLogin\Observer\CustomerLogin cannot extend from interface Magento\Framework\Event\ObserverInterface in /var/www/html/magento2_data/app/code/ObserverPractice/DiscountLogin/Observer/CustomerLogin.php on line 19
+[02-Jul-2018 08:17:53 UTC] PHP Fatal error:  Class ObserverPractice\DiscountLogin\Observer\CustomerLogin cannot extend from interface Magento\Framework\Event\ObserverInterface in /var/www/html/magento2_data/app/code/ObserverPractice/DiscountLogin/Observer/CustomerLogin.php on line 19
+[02-Jul-2018 08:52:34 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /var/www/html/magento2_data/app/code/ObserverPractice/DiscountLogin/Observer/CustomerLogin.php on line 12

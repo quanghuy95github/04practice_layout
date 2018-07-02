@@ -6,7 +6,7 @@
  */
 -->
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <update handle="default_head_blocks"/>
+    <!-- <update handle="default_head_blocks"/> -->
     <body>
         <referenceContainer name="header.container">
             <referenceContainer name="header-wrapper" htmlClass="header container" htmlTag="div">
@@ -62,14 +62,16 @@
         <referenceBlock name="copyright" remove="true"></referenceBlock>
         <referenceBlock name="report.bugs" remove="true"></referenceBlock>
         <referenceBlock name="form.subscribe" remove="true"></referenceBlock>
-        <container name="our-satisfaction-guarantee" before="footer-container" htmlTag="div">
-            <block class="Magento\Cms\Block\Block" name="Our-Satisfaction-Guarantee" before="footer-container">
-                <arguments>
-                  <argument name="block_id" xsi:type="string">Our-Satisfaction-Guarantee</argument>
-                </arguments>
-            </block>
-        </container>
-        <referenceContainer name="footer-container" htmlClass="footer-container ">
+        <referenceContainer name="page.wrapper">
+            <container name="our-satisfaction-guarantee" htmlTag="div">
+                <block class="Magento\Cms\Block\Block" name="Our-Satisfaction-Guarantee">
+                    <arguments>
+                      <argument name="block_id" xsi:type="string">Our-Satisfaction-Guarantee</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="footer-container" htmlClass="footer-container">
             <referenceContainer name="footer" htmlClass="footer">
                 <container name="footer-middle" htmlClass="footer-middle" htmlTag="div">
                     <container name="container-footer" htmlClass="container" htmlTag="div">
@@ -80,6 +82,25 @@
                 </container>
             </referenceContainer>
         </referenceContainer>
-        <referenceContainer name="div.sidebar.additional" remove="true"></referenceContainer>
+
+        <referenceBlock name="wishlist_sidebar" remove="true"></referenceBlock>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"></referenceBlock>
+
+
+        <move element="product.info.stock.sku" destination="div.sidebar.additional" as="sku_info"/>
+        <move element="product.info.price" destination="div.sidebar.additional" as="price_info" after="sku_info"/>
+        <move element="product.info.addtocart" destination="div.sidebar.additional" as="addtocart_info" after="price_info"/>
+        <move element="product.info.addto" destination="div.sidebar.additional" as="addto_info" after="addtocart_info"/>
+        <move element="product.info.mailto" destination="div.sidebar.additional" as="mailto_info" after="addto_info"/>
+
+        <referenceContainer name="main">
+            <container name="product-card-info" after="product.info.main" before="product.info.social">
+                <block class="Magento\Cms\Block\Block" name="Our-Satisfaction-Guarantee1">
+                    <arguments>
+                      <argument name="block_id" xsi:type="string">Our-Satisfaction-Guarantee</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
     </body>
 </page>

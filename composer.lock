@@ -4,32 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "90a14ceb0ff8ba95b3b8aabee762ef1d",
-    "content-hash": "67c5dd3e9fbef3fc50ffc35be3b86e45",
+    "hash": "0845d90826d39808f880d531e0624628",
+    "content-hash": "bd735b9e062369705a7847b860ae8d84",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
-            "version": "2.0.4",
+            "version": "2.0.12",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/amzn/amazon-pay-and-login-magento-2-module/amzn-amazon-pay-and-login-magento-2-module-2.0.4.0.zip",
+                "url": "https://repo.magento.com/archives/amzn/amazon-pay-and-login-magento-2-module/amzn-amazon-pay-and-login-magento-2-module-2.0.12.0.zip",
                 "reference": null,
-                "shasum": "c0a208f7b517a3505e3b982088f8f7c171c591b2"
+                "shasum": "0fd50d162bf057068880114b756d33f27f5f8fcc"
             },
             "require": {
                 "amzn/amazon-pay-sdk-php": "^3.2.0",
-                "magento/framework": "^100.1.0|^101.0.0",
-                "magento/module-backend": "^100.1.0|100.2.0",
-                "magento/module-checkout": "^100.1.0|^100.2.0",
-                "magento/module-config": "^100.1.0|^101.0.0",
-                "magento/module-customer": "^100.1.0|^101.0.0",
-                "magento/module-developer": "^100.1.0|^100.2.0",
-                "magento/module-eav": "^100.1.0|^101.0.0",
-                "magento/module-payment": "^100.1.0|^100.2.0",
-                "magento/module-quote": "^100.1.0|^101.0.0",
-                "magento/module-sales": "^100.1.0|^101.0.0",
-                "magento/module-store": "^100.1.0|^100.2.0",
-                "php": "7.0.2|7.0.4|~7.0.6|~7.1.0"
+                "magento/framework": "^100.1.0|^101.0.4",
+                "magento/module-backend": "^100.1.0|100.2.4",
+                "magento/module-checkout": "^100.1.0|^100.2.4",
+                "magento/module-config": "^100.1.0|^101.0.4",
+                "magento/module-customer": "^100.1.0|^101.0.4",
+                "magento/module-developer": "^100.1.0|^100.2.2",
+                "magento/module-eav": "^100.1.0|^101.0.3",
+                "magento/module-payment": "^100.1.0|^100.2.2",
+                "magento/module-quote": "^100.1.0|^101.0.3",
+                "magento/module-sales": "^100.1.0|^101.0.3",
+                "magento/module-store": "^100.1.0|^100.2.3",
+                "php": "~7.0.13|~7.1.0"
             },
             "require-dev": {
                 "behat/behat": "^3.1.0",
@@ -596,12 +596,12 @@
         },
         {
             "name": "dotmailer/dotmailer-magento2-extension",
-            "version": "2.4.9",
+            "version": "2.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/dotmailer/dotmailer-magento2-extension/dotmailer-dotmailer-magento2-extension-2.4.9.0.zip",
+                "url": "https://repo.magento.com/archives/dotmailer/dotmailer-magento2-extension/dotmailer-dotmailer-magento2-extension-2.5.0.0.zip",
                 "reference": null,
-                "shasum": "abc77a95479312394d83db35698c3d9c07bb759c"
+                "shasum": "7a1c72694c12b2011faf02ef580e3026d6d0fda3"
             },
             "require": {
                 "magento/framework": ">=100 <102",
@@ -1071,12 +1071,12 @@
         },
         {
             "name": "klarna/module-kp",
-            "version": "5.1.3",
+            "version": "5.2.3",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/klarna/module-kp/klarna-module-kp-5.1.3.0.zip",
+                "url": "https://repo.magento.com/archives/klarna/module-kp/klarna-module-kp-5.2.3.0.zip",
                 "reference": null,
-                "shasum": "01119a13fa190bc2323d1d95a211d72eddf0263f"
+                "shasum": "1140b2c58ddf7915e54a808aff9bdf866192387d"
             },
             "require": {
                 "klarna/module-core": "^4.0",
@@ -1245,6 +1245,74 @@
                 "terminal"
             ],
             "time": "2015-01-18 14:31:58"
+        },
+        {
+            "name": "magefan/module-community",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magefan/module-community.git",
+                "reference": "f0073919536a16b6456dcb90210d501381411954"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magefan/module-community/zipball/f0073919536a16b6456dcb90210d501381411954",
+                "reference": "f0073919536a16b6456dcb90210d501381411954",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6.5 || >=7.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magefan\\Community\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "time": "2018-04-16 18:47:32"
+        },
+        {
+            "name": "magefan/module-conflict-detector",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magefan/module-conflict-detector.git",
+                "reference": "72e78fdf6c15e91824564e71e40a7bee38057842"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magefan/module-conflict-detector/zipball/72e78fdf6c15e91824564e71e40a7bee38057842",
+                "reference": "72e78fdf6c15e91824564e71e40a7bee38057842",
+                "shasum": ""
+            },
+            "require": {
+                "magefan/module-community": ">=2.0.1",
+                "php": "~5.6.5 || >=7.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magefan\\ConflictDetector\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Detect extension conflicts",
+            "time": "2018-04-25 17:53:24"
         },
         {
             "name": "magento/composer",
@@ -7868,21 +7936,21 @@
         },
         {
             "name": "sashas/bug-from-email",
-            "version": "2.0.1",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sashas777/bug-from-email.git",
-                "reference": "7265ad1922f93ac143754a5fc940dc87a00ec385"
+                "reference": "2702dcb83710a44475ac55ba8debe200ac949fc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sashas777/bug-from-email/zipball/7265ad1922f93ac143754a5fc940dc87a00ec385",
-                "reference": "7265ad1922f93ac143754a5fc940dc87a00ec385",
+                "url": "https://api.github.com/repos/sashas777/bug-from-email/zipball/2702dcb83710a44475ac55ba8debe200ac949fc2",
+                "reference": "2702dcb83710a44475ac55ba8debe200ac949fc2",
                 "shasum": ""
             },
             "require": {
-                "magento/framework": "101.0.4",
-                "magento/module-sales": "101.0.3",
+                "magento/framework": "101.0.4|101.0.5",
+                "magento/module-sales": "101.0.3|101.0.4",
                 "php": "~5.6.5|7.0.2|7.0.4|~7.0.6|~7.1.0"
             },
             "type": "magento2-module",
@@ -7900,7 +7968,7 @@
             ],
             "description": "A Magento 2 module for issue #14952",
             "homepage": "http://www.extensions.sashas.org/",
-            "time": "2018-05-12 07:24:23"
+            "time": "2018-06-30 22:54:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -8609,12 +8677,12 @@
         },
         {
             "name": "temando/module-shipping-m2",
-            "version": "1.1.3",
+            "version": "1.2.7",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/temando/module-shipping-m2/temando-module-shipping-m2-1.1.3.0.zip",
+                "url": "https://repo.magento.com/archives/temando/module-shipping-m2/temando-module-shipping-m2-1.2.7.0.zip",
                 "reference": null,
-                "shasum": "8de74c7bb5f6fb92206c51e7afd1eddffcf0e2d4"
+                "shasum": "bb8fbe0cdca9498ac65bf91fa282e8a59e62fe74"
             },
             "require": {
                 "magento/framework": "^101.0.0",
@@ -8624,6 +8692,7 @@
                 "magento/module-config": "^101.0.0",
                 "magento/module-customer": "^101.0.0",
                 "magento/module-directory": "^100.2.0",
+                "magento/module-eav": "^101.0.0",
                 "magento/module-integration": "^100.2.0",
                 "magento/module-multishipping": "^100.2.0",
                 "magento/module-quote": "^101.0.0",
@@ -8632,7 +8701,6 @@
                 "magento/module-store": "^100.2.0",
                 "magento/module-tax": "^100.2.0",
                 "magento/module-ui": "^101.0.0",
-                "magento/zendframework1": "^1.12.16",
                 "monolog/monolog": "^1.17.0",
                 "php": "7.0.2|7.0.4|~7.0.6|~7.1.0",
                 "psr/log": "~1.0",
@@ -8715,12 +8783,12 @@
         },
         {
             "name": "vertex/module-tax",
-            "version": "2.1.2",
+            "version": "2.1.8",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/vertex/module-tax/vertex-module-tax-2.1.2.0.zip",
+                "url": "https://repo.magento.com/archives/vertex/module-tax/vertex-module-tax-2.1.8.0.zip",
                 "reference": null,
-                "shasum": "5138f65c4db9d3ad4f2f33558cb3cd80ac3e180f"
+                "shasum": "8364f8157551026541e411dc024e16574765990c"
             },
             "require": {
                 "ext-simplexml": "*",
@@ -8736,11 +8804,11 @@
                 "magento/module-sales": "^100.0.2|^101.0.0",
                 "magento/module-shipping": "^100.0.2",
                 "magento/module-store": "^100.0.2",
-                "magento/module-tax": "<=100.2.4",
-                "php": "^5.6|^7.0"
+                "magento/module-tax": "<=100.2.5",
+                "php": "^5.5.22|^7.0"
             },
             "conflict": {
-                "magento/module-gift-wrapping": ">101.0.2",
+                "magento/module-gift-wrapping": ">101.0.3",
                 "pixafy/tax": "*",
                 "pixafy/tax-ee": "*",
                 "vertex/tax": "*",
@@ -8757,7 +8825,11 @@
                 "vlucas/phpdotenv": "^2.4"
             },
             "suggest": {
-                "magento/module-gift-wrapping": "Vertex Tax Links for Magento 2 also supports Magento's Gift Wrapping module"
+                "magento/module-checkout": "Vertex Tax Links for Magento 2 also supports Magento's Checkout module",
+                "magento/module-gift-card-account": "Vertex Tax Links for Magento 2 also supports Magento's Gift Card Account module",
+                "magento/module-gift-wrapping": "Vertex Tax Links for Magento 2 also supports Magento's Gift Wrapping module",
+                "magento/module-multishipping": "Vertex Tax Links for Magento 2 also supports Magento's Multishipping module",
+                "magento/module-reward": "Vertex Tax Links for Magento 2 also supports Magento's Reward module"
             },
             "type": "magento2-module",
             "autoload": {
@@ -8771,7 +8843,7 @@
             "license": [
                 "proprietary"
             ],
-            "description": "Vertex Tax component for Magento 2"
+            "description": "Vertex Tax Links for Magento 2"
         },
         {
             "name": "zendframework/zend-captcha",
@@ -9150,16 +9222,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.7.2",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "741e7a571836f038de731105f4742ca8a164e43a"
+                "reference": "11c9c1835e60eef6f9234377a480fcec096ebd9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/741e7a571836f038de731105f4742ca8a164e43a",
-                "reference": "741e7a571836f038de731105f4742ca8a164e43a",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/11c9c1835e60eef6f9234377a480fcec096ebd9e",
+                "reference": "11c9c1835e60eef6f9234377a480fcec096ebd9e",
                 "shasum": ""
             },
             "require": {
@@ -9178,12 +9250,22 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev",
-                    "dev-develop": "1.8.x-dev",
+                    "dev-master": "1.8.x-dev",
+                    "dev-develop": "1.9.x-dev",
                     "dev-release-2.0": "2.0.x-dev"
                 }
             },
             "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php"
+                ],
                 "psr-4": {
                     "Zend\\Diactoros\\": "src/"
                 }
@@ -9199,7 +9281,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-05-29 16:53:08"
+            "time": "2018-06-27 18:52:43"
         },
         {
             "name": "zendframework/zend-escaper",
