@@ -23,6 +23,6 @@ class CustomerLogin implements ObserverInterface
         $data[] = $customer->getName(); //Get customer name
         $data[] = $customer->getEmail(); //Get customer email
         $this->_logger->info('login', $data);
-        exit;
+        // exit;
     }
 }
