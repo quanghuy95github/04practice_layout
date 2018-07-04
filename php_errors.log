@@ -1104,3 +1104,281 @@ Stack trace:
 #3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
 #4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
 #5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[04-Jul-2018 01:34:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:34:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:35:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:36:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:36:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:39:18 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:18 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:18 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:18 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_STORE_RELATIONS): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_STORE_RELATIONS): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG_SCOPES): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:22 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:26 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:26 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[04-Jul-2018 01:39:26 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:26 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[04-Jul-2018 01:39:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:40:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:46:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:48:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:49:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:49:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:49:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:50:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 01:56:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function dispatch() on null in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php:652
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('get_product_sku')
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(489): Magento\Framework\View\Layout->renderNonCachedElement('get_product_sku')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Layout->renderElement('get_product_sku', false)
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Layout\Interceptor->___callParent('renderElement', Array)
+#5 /var/www/html/magento2_data/vendor/honl/magento2-templatehints/Plugin/View/LayoutPlugin.php(70): M in /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php on line 652
+[04-Jul-2018 02:01:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Magento\Catalog\Model\ProductRepository\Interceptor::getBySku() in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml:10
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/TemplateEngine/Php.php(59): include()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Element/Template.php(270): Magento\Framework\View\TemplateEngine\Php->render(Object(OpenTechiz\Helloworld\Block\Product), '/var/www/html/m...', Array)
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Element/Template.php(300): Magento\Framework\View\Element\Template->fetchView('/var/www/html/m...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php(667): Magento\Framework\View\Element\Template->_toHtml()
+#4 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml on line 10
+[04-Jul-2018 02:04:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEntityId() on boolean in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml:22
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/TemplateEngine/Php.php(59): include()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Element/Template.php(270): Magento\Framework\View\TemplateEngine\Php->render(Object(OpenTechiz\Helloworld\Block\Product), '/var/www/html/m...', Array)
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Element/Template.php(300): Magento\Framework\View\Element\Template->fetchView('/var/www/html/m...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php(667): Magento\Framework\View\Element\Template->_toHtml()
+#4 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#5 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Fr in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml on line 22
+[04-Jul-2018 02:04:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on boolean in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml:23
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/View/TemplateEngine/Php.php(59): include()
+#1 /var/www/html/magento2_data/vendor/magento/framework/View/Element/Template.php(270): Magento\Framework\View\TemplateEngine\Php->render(Object(OpenTechiz\Helloworld\Block\Product), '/var/www/html/m...', Array)
+#2 /var/www/html/magento2_data/vendor/magento/framework/View/Element/Template.php(300): Magento\Framework\View\Element\Template->fetchView('/var/www/html/m...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/View/Element/AbstractBlock.php(667): Magento\Framework\View\Element\Template->_toHtml()
+#4 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#5 /var/www/html/magento2_data/vendor/magento/framework/View/Layout.php(534): Magento\Framew in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml on line 23
+[04-Jul-2018 02:06:35 UTC] PHP Fatal error:  Allowed memory size of 792723456 bytes exhausted (tried to allocate 400572416 bytes) in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml on line 22
+[04-Jul-2018 02:07:56 UTC] PHP Fatal error:  Allowed memory size of 792723456 bytes exhausted (tried to allocate 534790144 bytes) in /var/www/html/magento2_data/app/code/OpenTechiz/Helloworld/view/frontend/templates/product_sku.phtml on line 22
+[04-Jul-2018 03:54:12 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento2_data/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php( in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php on line 115
+[04-Jul-2018 06:18:30 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[04-Jul-2018 06:53:49 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/html/magento2_data//var/log/debug.log" could not be opened: failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Logger/Handler/Base.php(87): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/html/magento2_data/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Magento\Framework\Logger\Handler\Base->write(Array)
+#2 /var/www/html/magento2_data/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#3 /var/www/html/magento2_data/vendor/magento/framework/Logger/Monolog.php(48): Monolog\Logger->addRecord(100, 'cache_invalidat...', Array)
+#4 /var/www/html/magento2_data/vendor/monolog/monolog/src/Monolog/Logger.php(532): Magento\Framework\Logger\Monolog->addRecord(100, 'cache_invalidat...', Array)
+#5 /var/www/html/ma in /var/www/html/magento2_data/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 107

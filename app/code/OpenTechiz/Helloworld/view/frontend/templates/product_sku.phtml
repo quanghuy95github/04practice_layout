@@ -1,0 +1,21 @@
+<?php
+$product = $this->getProductById(2074);
+echo $product->getEntityId() . '<br>';
+echo $product->getName() . '<br>';
+echo $product->getSKU() . '<br>';
+echo $product->getPrice() . '<br>';
+echo $product->getSpecialPrice() . '<br>';
+echo $product->getTypeId() . '<br>';
+echo $product->getProductUrl() . '<br>';
+
+echo "<br>";
+echo "<br>";
+$product2 = $this->getBySku('Dress');
+// var_dump($product2);
+echo $product2->getEntityId() . '<br>';
+echo $product2->getName() . '<br>';
+echo $product2->getSKU() . '<br>';
+echo $product2->getPrice() . '<br>';
+echo $product2->getSpecialPrice() . '<br>';
+echo $product2->getTypeId() . '<br>';
+echo $product2->getProductUrl() . '<br>';

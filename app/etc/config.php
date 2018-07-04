@@ -148,7 +148,7 @@ return [
     'Magento_WishlistSampleData' => 1,
     'Mageplaza_Core' => 1,
     'Mgt_DeveloperToolbar' => 1,
-    'ObserverPractice_DiscountLogin' => 1,
+    'OpenTechiz_Blog' => 1,
     'OpenTechiz_Helloworld' => 1,
     'ProgrammingAtKstark_CatewithimgWidget' => 1,
     'Robin_Eshoper' => 1,
