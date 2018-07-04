@@ -1382,3 +1382,74 @@ Stack trace:
 #3 /var/www/html/magento2_data/vendor/magento/framework/Logger/Monolog.php(48): Monolog\Logger->addRecord(100, 'cache_invalidat...', Array)
 #4 /var/www/html/magento2_data/vendor/monolog/monolog/src/Monolog/Logger.php(532): Magento\Framework\Logger\Monolog->addRecord(100, 'cache_invalidat...', Array)
 #5 /var/www/html/ma in /var/www/html/magento2_data/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 107
+[04-Jul-2018 09:47:20 UTC] PHP Fatal error:  Allowed memory size of 792723456 bytes exhausted (tried to allocate 401358848 bytes) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/view/frontend/templates/list.phtml on line 5
+[04-Jul-2018 09:48:21 UTC] PHP Fatal error:  Allowed memory size of 792723456 bytes exhausted (tried to allocate 501235712 bytes) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/view/frontend/templates/list.phtml on line 5
+[04-Jul-2018 09:50:22 UTC] PHP Fatal error:  Allowed memory size of 792723456 bytes exhausted (tried to allocate 400572416 bytes) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/view/frontend/templates/list.phtml on line 5
+[04-Jul-2018 09:51:12 UTC] PHP Fatal error:  Allowed memory size of 792723456 bytes exhausted (tried to allocate 400572416 bytes) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/view/frontend/templates/list.phtml on line 6
+[04-Jul-2018 09:52:41 UTC] PHP Fatal error:  Allowed memory size of 792723456 bytes exhausted (tried to allocate 400572416 bytes) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/view/frontend/templates/list.phtml on line 6
+[04-Jul-2018 10:43:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::checkUrlKey() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php:78
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(52): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(94): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\I in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 78
+[04-Jul-2018 10:46:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::checkUrlKey() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php:78
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(51): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(94): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\I in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 78
+[04-Jul-2018 10:48:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::checkUrlKey() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php:78
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(51): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(94): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\I in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 78
+[04-Jul-2018 10:48:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::checkUrlKey() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php:78
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(51): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(94): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\I in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 78
+[04-Jul-2018 10:51:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::checkUrlKey() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php:78
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(51): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(94): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\I in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 78
+[04-Jul-2018 10:51:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::checkUrlKey() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php:78
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(51): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(94): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\I in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 78
+[04-Jul-2018 10:54:37 UTC] PHP Fatal error:  Interface 'Ashsmith\Blog\Api\Data\PostInterface' not found in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 7
+[04-Jul-2018 10:54:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::checkUrlKey() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php:70
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(51): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(94): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\I in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php on line 70
+[04-Jul-2018 10:56:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Model\ResourceModel\Post::_getLoadByUrlKeySelect() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/ResourceModel/Post.php:22
+Stack trace:
+#0 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Post.php(70): OpenTechiz\Blog\Model\ResourceModel\Post->checkUrlKey('1')
+#1 /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Router.php(51): OpenTechiz\Blog\Model\Post->checkUrlKey('1')
+#2 /var/www/html/magento2_data/vendor/magento/framework/App/FrontController.php(50): OpenTechiz\Blog\Controller\Router->match(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent('dispatch', Array)
+#5 /var/www/html/magento2 in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/ResourceModel/Post.php on line 22
+[04-Jul-2018 11:08:53 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Helper/Post.php on line 70
+[04-Jul-2018 11:09:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method OpenTechiz\Blog\Helper\Post::prepareResultPost() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/View/Index.php:32
+Stack trace:
+#0 /var/www/html/magento2_data/generated/code/OpenTechiz/Blog/Controller/View/Index/Interceptor.php(24): OpenTechiz\Blog\Controller\View\Index->execute()
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/Action/Action.php(107): OpenTechiz\Blog\Controller\View\Index\Interceptor->execute()
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): OpenTechiz\Blog\Controller\View\Index\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): OpenTechiz\Blog\Contro in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/View/Index.php on line 32

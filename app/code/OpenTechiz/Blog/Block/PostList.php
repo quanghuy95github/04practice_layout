@@ -42,8 +42,8 @@ class PostList extends \Magento\Framework\View\Element\Template implements
                 ->create()
                 ->addFilter('is_active', 1)
                 ->addOrder(
-                    PostInterface::CREATION_TIME,
-                    PostCollection::SORT_ORDER_DESC
+                    PostInterface::CREATION_TIME,   // truong can sap xep thu tu
+                    PostCollection::SORT_ORDER_DESC // kieu sap xep du lieu giam dan
                 );
             $this->setData('posts', $posts);
         }
