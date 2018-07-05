@@ -4,6 +4,7 @@ namespace OpenTechiz\Blog\Block;
 class PostView extends \Magento\Framework\View\Element\Template implements
     \Magento\Framework\DataObject\IdentityInterface
 {
+
     /**
      * Construct
      *
@@ -23,6 +24,7 @@ class PostView extends \Magento\Framework\View\Element\Template implements
         $this->_post = $post;
         $this->_postFactory = $postFactory;
     }
+
     /**
      * @return \OpenTechiz\Blog\Model\Post
      */
@@ -43,6 +45,7 @@ class PostView extends \Magento\Framework\View\Element\Template implements
         }
         return $this->getData('post');
     }
+
     /**
      * Return identifiers for produced content
      *
@@ -52,4 +55,5 @@ class PostView extends \Magento\Framework\View\Element\Template implements
     {
         return [\OpenTechiz\Blog\Model\Post::CACHE_TAG . '_' . $this->getPost()->getId()];
     }
+
 }

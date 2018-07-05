@@ -27,12 +27,46 @@ class Router implements \Magento\Framework\App\RouterInterface
      */
     protected $_postFactory;
 
+    /**
+     * Config primary
+     *
+     * @var \Magento\Framework\App\State
+     */
+    protected $_appState;
+
+    /**
+     * Url
+     *
+     * @var \Magento\Framework\UrlInterface
+     */
+    protected $_url;
+
+    /**
+     * Response
+     *
+     * @var \Magento\Framework\App\ResponseInterface
+     */
+    protected $_response;
+
+    /**
+     * @param \Magento\Framework\App\ActionFactory $actionFactory
+     * @param \Magento\Framework\Event\ManagerInterface $eventManager
+     * @param \Magento\Framework\UrlInterface $url
+     * @param \OpenTechiz\Blog\Model\PostFactory $postFactory
+     * @param \Magento\Framework\App\ResponseInterface $response
+     */
     public function __construct(
         \Magento\Framework\App\ActionFactory $actionFactory,
-        \OpenTechiz\Blog\Model\PostFactory $postFactory
+        \Magento\Framework\Event\ManagerInterface $eventManager,
+        \Magento\Framework\UrlInterface $url,
+        \OpenTechiz\Blog\Model\PostFactory $postFactory,
+        \Magento\Framework\App\ResponseInterface $response
     ) {
         $this->actionFactory = $actionFactory;
-        $this->_postFactory = $postFactory;
+        $this->_eventManager = $eventManager;
+        $this->_url = $url;
+        $this->_pageFactory = $postFactory;
+        $this->_response = $response;
     }
 
     /**
@@ -47,7 +81,7 @@ class Router implements \Magento\Framework\App\RouterInterface
         $url_key = rtrim($url_key, '/');
 
         /** @var \OpenTechiz\Blog\Model\Post $post */
-        $post = $this->_postFactory->create();
+        $post = $this->_pageFactory->create();
         $post_id = $post->checkUrlKey($url_key);
         if (!$post_id) {
             return null;
