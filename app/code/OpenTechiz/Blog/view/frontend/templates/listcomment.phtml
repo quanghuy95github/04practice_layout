@@ -1,0 +1,17 @@
+<?php /** @var $block \OpenTechiz\Blog\Block\PostList */ ?>
+<h2><?php echo __('List comment') ?></h2>
+<ul class="blog-post-list">
+    <?php /** @var $post \OpenTechiz\Blog\Model\Post */ ?>
+    <?php foreach ($block->getComments() as $comments): ?>
+        <?php //print_r($comments->getData()); ?>
+        <li class="blog-post-list-item">
+            <div class="blog-post-item-content">
+                <?php echo $comments->getContent(); ?>
+            </div>
+
+            <div class="blog-post-item-meta">
+                <strong><?php echo __('Created at:') ?></strong> <?php echo $comments->getCreationTime() ?>
+            </div>
+        </li>
+    <?php endforeach; ?>
+</ul>
