@@ -38,5 +38,10 @@ class CommentForm extends \Magento\Framework\View\Element\Template
 
         return '/magento2_data/blog/save/index';
         // here controller_name is index, action is booking
+    }
+
+    public function getCommentAjaxAction()
+    {
+        return '/magento2_data/blog/comment/save';
     }	
 }

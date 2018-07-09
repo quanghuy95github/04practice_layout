@@ -1,14 +1,24 @@
 <?php
-namespace OpenTechiz\Blog\Controller\Adminhtml\Post;
+/**
+ *
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+namespace OpenTechiz\Banner\Controller\Adminhtml\Index;
 
 class NewAction extends \Magento\Backend\App\Action
 {
     /**
+     * Authorization level of a basic admin session
+     *
+     * @see _isAllowed()
+     */
+    const ADMIN_RESOURCE = 'OpenTechiz_Banner::save';
+
+    /**
      * @var \Magento\Backend\Model\View\Result\Forward
      */
     protected $resultForwardFactory;
-    
-    protected $coreRegistry;
 
     /**
      * @param \Magento\Backend\App\Action\Context $context
@@ -16,20 +26,10 @@ class NewAction extends \Magento\Backend\App\Action
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
-        \Magento\Framework\Registry $coreRegistry,
         \Magento\Backend\Model\View\Result\ForwardFactory $resultForwardFactory
     ) {
         $this->resultForwardFactory = $resultForwardFactory;
-        $this->coreRegistry = $coreRegistry;
         parent::__construct($context);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    protected function _isAllowed()
-    {
-        return $this->_authorization->isAllowed('OpenTechiz_Blog::save');
     }
 
     /**

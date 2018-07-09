@@ -6,6 +6,7 @@ namespace OpenTechiz\Banner\Model\ResourceModel;
  */
 class Banner extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
+
 	/**
      * Initialize resource model table name+ primary
      *
