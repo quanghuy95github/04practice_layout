@@ -78,12 +78,13 @@ class Save extends Action
                     'store' => \Magento\Store\Model\Store::DEFAULT_STORE_ID,
                 ]
             )
-            ->setTemplateVars(['name' => 'Cong ty cowell'])
-            ->setFrom($sender)
-            ->addTo($email)
-            ->setReplyTo($email)
+            ->setTemplateVars(['name' => 'quang huy']) // ten nguoi nhan
+            ->setFrom($sender)      // email nguoi gui
+            ->addTo($email)             // email nguoi nhan
+            ->setReplyTo($email)        // email nhan reply
             ->getTransport()
             ->sendMessage();
+            
         // return nofication comment
         $jsonResultReaponse = $this->resultJsonFactory->create();
         if (!$error) {

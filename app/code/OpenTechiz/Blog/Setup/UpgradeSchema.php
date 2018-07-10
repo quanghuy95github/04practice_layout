@@ -40,6 +40,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
 
         $installer->getConnection()->createTable($table);
 
+        // add column email
         if (version_compare($context->getVersion(), '1.5.0', '<')) {
           $installer->getConnection()->addColumn(
                 $installer->getTable('opentechiz_blog_comment'),
@@ -47,6 +48,20 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 [
                     'type' => Table::TYPE_TEXT,
                     'length' => 255,
+                    'nullable' => true,
+                    'comment' => 'Email admin'
+                ]
+            );
+        }
+
+        // add column status
+        if (version_compare($context->getVersion(), '1.5.0', '<')) {
+          $installer->getConnection()->addColumn(
+                $installer->getTable('opentechiz_blog_comment'),
+                'status',
+                [
+                    'type' => Table::TYPE_SMALLINT,
+                    'length' => null,
                     'nullable' => true,
                     'comment' => 'Email admin'
                 ]
