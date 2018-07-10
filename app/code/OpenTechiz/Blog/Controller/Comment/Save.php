@@ -10,14 +10,22 @@ class Save extends Action
 
     protected $inlineTranslation;
 
+    protected $_transportBuilder;
+
+    protected $scopeConfig;
+
     public function __construct(
         \Magento\Framework\App\Action\Context $context,
+        \Magento\Framework\Mail\Template\TransportBuilder $transportBuilder,
         \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory
     )
     {
         $this->resultJsonFactory = $resultJsonFactory;
         $this->inlineTranslation = $inlineTranslation;
+        $this->_transportBuilder = $transportBuilder;
+        $this->scopeConfig = $scopeConfig;
         parent::__construct($context);
     }
      /**
@@ -39,23 +47,43 @@ class Save extends Action
         $postObject->setData($post);
 
         // add validation code here
-        if (!\Zend_Validate::is(trim($post['customer_id']), 'NotEmpty')) {
+        if (!\Zend_Validate::is(trim($post['email']), 'NotEmpty')) {
             $error = true;
             $message = 'name can not be empty';
         }
         
         // save data to database
-        $customer_id = $post['customer_id'];
+        $email = $post['email'];
         $content = $post['content'];
         $post_id = $post['post_id'];
 
         $comment = $this->_objectManager->create('OpenTechiz\Blog\Model\Comment');
-        $comment->setCustomerId($post_id);
+        $comment->setEmail($email);
         $comment->setContent($content);
         $comment->setPostID($post_id);
 
         $comment->save();
 
+        $sender = [
+            'name' => "Nguyen Quang Huy",
+            'email' => "quanghuy.tb.vn@gmail.com"
+        ];
+        // sendmail
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+        $transport = $this->_transportBuilder
+            ->setTemplateIdentifier($this->scopeConfig->getValue('blog/general/template', $storeScope))
+            ->setTemplateOptions(
+                [
+                    'area' => \Magento\Framework\App\Area::AREA_FRONTEND,
+                    'store' => \Magento\Store\Model\Store::DEFAULT_STORE_ID,
+                ]
+            )
+            ->setTemplateVars(['name' => 'Cong ty cowell'])
+            ->setFrom($sender)
+            ->addTo($email)
+            ->setReplyTo($email)
+            ->getTransport()
+            ->sendMessage();
         // return nofication comment
         $jsonResultReaponse = $this->resultJsonFactory->create();
         if (!$error) {

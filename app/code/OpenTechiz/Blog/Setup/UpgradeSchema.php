@@ -40,6 +40,19 @@ class UpgradeSchema implements UpgradeSchemaInterface
 
         $installer->getConnection()->createTable($table);
 
+        if (version_compare($context->getVersion(), '1.5.0', '<')) {
+          $installer->getConnection()->addColumn(
+                $installer->getTable('opentechiz_blog_comment'),
+                'email',
+                [
+                    'type' => Table::TYPE_TEXT,
+                    'length' => 255,
+                    'nullable' => true,
+                    'comment' => 'Email admin'
+                ]
+            );
+        }
+
         $installer->endSetup();
     }
 

@@ -1955,3 +1955,51 @@ Stack trace:
 #2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
 #3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): OpenTechiz\Blog\Controller\Comment\Save\Interceptor->___callParent('dispatch', Array)
 #4 /var/www/html/magento2_data/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): OpenTechiz\Blog\Controller\Comment\Save\Interceptor->M in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 42
+[09-Jul-2018 17:52:49 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[09-Jul-2018 17:52:49 UTC] PHP Warning:  file_put_contents(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 663
+[09-Jul-2018 17:52:49 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_CONFIG): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[09-Jul-2018 17:52:49 UTC] PHP Warning:  fopen(/var/www/html/magento2_data/var/cache//mage-tags/mage---0e3_MAGE): failed to open stream: Permission denied in /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php on line 646
+[10-Jul-2018 01:58:50 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento2_data/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento2_data/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php( in /var/www/html/magento2_data/vendor/magento/framework/Code/Generator.php on line 115
+[10-Jul-2018 02:43:31 UTC] PHP Fatal error:  Cannot redeclare OpenTechiz\Blog\Model\Comment::setEmail() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Comment.php on line 71
+[10-Jul-2018 02:44:35 UTC] PHP Fatal error:  Cannot redeclare OpenTechiz\Blog\Model\Comment::setEmail() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Comment.php on line 71
+[10-Jul-2018 02:44:37 UTC] PHP Fatal error:  Cannot redeclare OpenTechiz\Blog\Model\Comment::setEmail() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Comment.php on line 71
+[10-Jul-2018 02:45:15 UTC] PHP Fatal error:  Cannot redeclare OpenTechiz\Blog\Model\Comment::setEmail() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Comment.php on line 71
+[10-Jul-2018 02:46:04 UTC] PHP Fatal error:  Cannot redeclare OpenTechiz\Blog\Model\Comment::setEmail() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Comment.php on line 71
+[10-Jul-2018 02:46:54 UTC] PHP Fatal error:  Cannot redeclare OpenTechiz\Blog\Model\Comment::setEmail() in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Model/Comment.php on line 71
+[10-Jul-2018 02:51:30 UTC] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to OpenTechiz\Blog\Controller\Comment\Save::__construct() must implement interface Magento\Framework\App\Config\ScopeConfigInterface, instance of Magento\Framework\Controller\Result\JsonFactory given, called in /var/www/html/magento2_data/generated/code/OpenTechiz/Blog/Controller/Comment/Save/Interceptor.php on line 14 and defined in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php:17
+Stack trace:
+#0 /var/www/html/magento2_data/generated/code/OpenTechiz/Blog/Controller/Comment/Save/Interceptor.php(14): OpenTechiz\Blog\Controller\Comment\Save->__construct(Object(Magento\Framework\App\Action\Context), Object(Sashas\BugFromEmail\Rewrite\Framework\Mail\Template\TransportBuilder\Interceptor), Object(Magento\Framework\Translate\Inline\State), Object(Magento\Framework\Controller\Result\JsonFactory))
+#1 /var/www/html/magento2_data/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): OpenTechiz\Blog\Controller\Comment\Save\Interc in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 17
+[10-Jul-2018 03:21:10 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento2_data/var/cache/" is not writable in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento2_data/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento2_data/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento2_data/vendor/magento/fram in /var/www/html/magento2_data/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[10-Jul-2018 03:24:55 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 79
+[10-Jul-2018 03:41:21 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 69
+[10-Jul-2018 03:49:30 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 87
+[10-Jul-2018 04:27:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Magento\App\Area\FrontNameResolver' not found in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php:77
+Stack trace:
+#0 /var/www/html/magento2_data/generated/code/OpenTechiz/Blog/Controller/Comment/Save/Interceptor.php(24): OpenTechiz\Blog\Controller\Comment\Save->execute()
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/Action/Action.php(107): OpenTechiz\Blog\Controller\Comment\Save\Interceptor->execute()
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): OpenTechiz\Blog\Controller\Comment\Save\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): OpenTechiz\Blog\Controller\Commen in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 77
+[10-Jul-2018 04:28:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Magento\App\Area\Area' not found in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php:77
+Stack trace:
+#0 /var/www/html/magento2_data/generated/code/OpenTechiz/Blog/Controller/Comment/Save/Interceptor.php(24): OpenTechiz\Blog\Controller\Comment\Save->execute()
+#1 /var/www/html/magento2_data/vendor/magento/framework/App/Action/Action.php(107): OpenTechiz\Blog\Controller\Comment\Save\Interceptor->execute()
+#2 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/html/magento2_data/vendor/magento/framework/Interception/Interceptor.php(138): OpenTechiz\Blog\Controller\Comment\Save\Interceptor->___callParent('dispatch', Array)
+#4 /var/www/html/magento2_data/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): OpenTechiz\Blog\Controller\Comment\Save\Interc in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 77
+[10-Jul-2018 04:30:35 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /var/www/html/magento2_data/app/code/OpenTechiz/Blog/Controller/Comment/Save.php on line 86
