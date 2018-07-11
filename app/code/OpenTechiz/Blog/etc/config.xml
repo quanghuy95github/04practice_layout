@@ -5,6 +5,9 @@
 			<general>
 				<template>blog_comment_notification_email_template</template>
 			</general>
+			<remind>
+				<template>blog_comment_remind_email_template</template>
+			</remind>
 		</blog>
 	</default>
 </config>
