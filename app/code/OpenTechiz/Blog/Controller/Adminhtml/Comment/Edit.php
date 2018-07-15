@@ -32,20 +32,11 @@ class Edit extends \Magento\Backend\App\Action
         parent::__construct($context);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function _isAllowed()
     {
         return $this->_authorization->isAllowed('OpenTechiz_Blog::comment_save');
     }
 
-    /**
-     * Edit Blog post
-     *
-     * @return \Magento\Backend\Model\View\Result\Page|\Magento\Backend\Model\View\Result\Redirect
-     * @SuppressWarnings(PHPMD.NPathComplexity)
-     */
     public function execute()
     {   
         $id = $this->getRequest()->getParam('comment_id');
@@ -55,7 +46,7 @@ class Edit extends \Magento\Backend\App\Action
             $model->load($id);
             if (!$model->getId()) {
                 $this->messageManager->addError(__('This comment no longer exists.'));
-                /** \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
+
                 $resultRedirect = $this->resultRedirectFactory->create();
 
                 return $resultRedirect->setPath('*/*/');

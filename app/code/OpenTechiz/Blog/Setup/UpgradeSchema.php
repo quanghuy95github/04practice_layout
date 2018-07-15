@@ -68,6 +68,23 @@ class UpgradeSchema implements UpgradeSchemaInterface
             );
         }
 
+        // create table notification
+        $table = $installer->getConnection()
+            ->newTable($installer->getTable('opentechiz_blog_comment_notification'))
+            ->addColumn('noti_id', Table::TYPE_SMALLINT, null, [
+               'identity' => true,
+               'nullable' => false,
+               'primary' => true,
+            ], 'Noti ID')
+            ->addColumn('content', Table::TYPE_TEXT, 255, ['nullable => false'], 'Notification Content')
+            ->addColumn('customer_id', Table::TYPE_SMALLINT, null, ['nullable' => false], 'Customer ID')
+            ->addColumn('post_id', Table::TYPE_SMALLINT, null, ['nullable' => false], 'Post ID')
+            ->addColumn('creation_time', Table::TYPE_TIMESTAMP, null, [], 'Comment Created At')
+            ->setComment('Comment Notification');
+
+        $installer->getConnection()->createTable($table);
+
+
         $installer->endSetup();
     }
 
