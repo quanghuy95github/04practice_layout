@@ -8,6 +8,21 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
 {
     const CACHE_TAG='opentechiz_blog_comment';
 
+    const STATUS_ENABLED = 1;
+    const STATUS_DISABLED = 0;
+
+    function __construct(
+        \Magento\Framework\Model\Context $context,
+        \Magento\Framework\Registry $registry,
+        \Magento\Framework\UrlInterface $urlBuilder,
+        \Magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
+        \Magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
+        array $data = [])
+    {
+        $this->_urlBuilder = $urlBuilder;
+        parent::__construct($context, $registry, $resource, $resourceCollection, $data);
+    }
+    
     function _construct()
     {
         $this->_init('OpenTechiz\Blog\Model\ResourceModel\Comment');
@@ -53,6 +68,11 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
         return $this->getData(self::UPDATE_TIME);
     }
 
+    public function getAvailableStatuses()
+    {
+        return [self::STATUS_ENABLED => __('Enabled'), self::STATUS_DISABLED => __('Disabled')];
+    }
+
     function setID($id){
         $this->setData(self::COMMENT_ID,$id);
         return $this;
@@ -86,5 +106,10 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
     public function setUpdateTime($update_time)
     {
         return $this->setData(self::UPDATE_TIME, $update_time);
+    }
+
+    public function setAvailableStatuses($status)
+    {
+        return $this->setData(self::STATUS, $status);
     }
 }

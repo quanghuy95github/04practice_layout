@@ -58,7 +58,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
         if (version_compare($context->getVersion(), '1.5.0', '<')) {
           $installer->getConnection()->addColumn(
                 $installer->getTable('opentechiz_blog_comment'),
-                'status',
+                'is_active',
                 [
                     'type' => Table::TYPE_SMALLINT,
                     'length' => null,

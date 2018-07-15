@@ -14,6 +14,7 @@ interface CommentInterface
     const CREATION_TIME    = 'creation_time';
     const UPDATE_TIME      = 'update_time';
     const EMAIL            = 'email';
+    const STATUS           = 'status';
 
     public function getId();
 
@@ -29,6 +30,8 @@ interface CommentInterface
 
     public function getUpdateTime();
 
+    public function getAvailableStatuses();
+
     public function setId($id);
 
     public function setContent($content);
@@ -42,4 +45,6 @@ interface CommentInterface
     public function setCreationTime($creationTime);
 
     public function setUpdateTime($updateTime);
+
+    public function setAvailableStatuses($status);
 }
