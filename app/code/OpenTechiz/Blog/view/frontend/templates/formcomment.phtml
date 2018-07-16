@@ -1,8 +1,10 @@
+<?php $helper = $this->helper('OpenTechiz\Blog\Helper\UserInfo'); ?>
 <form id="comment-form" action="<?php echo $block->getFormAction(); ?>" method="post">
 
     <fieldset class="fieldset">
         <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Add new comment') ?></span></legend><br>
         <div class="note"></div>
+        <?php if(!$helper->isLoggedIn()) {?>
         <div class="field required">
             <label for="author" class="label">
                 <span><?php /* @escapeNotVerified */ echo __('Email') ?></span>
@@ -14,6 +16,7 @@
                        class="input-text" width="50%">
             </div>
         </div>
+        <?php } ?>
         <div class="field required">
             <label for="content" class="label">
                 <span><?php /* @escapeNotVerified */ echo __('Content') ?></span>

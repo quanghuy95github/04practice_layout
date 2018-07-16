@@ -14,11 +14,14 @@ class Save extends Action
 
     protected $scopeConfig;
 
+    protected $customerSession;
+
     public function __construct(
         \Magento\Framework\App\Action\Context $context,
         \Magento\Framework\Mail\Template\TransportBuilder $transportBuilder,
         \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
+        \Magento\Customer\Model\Session $customerSession,
         \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory
     )
     {
@@ -26,6 +29,8 @@ class Save extends Action
         $this->inlineTranslation = $inlineTranslation;
         $this->_transportBuilder = $transportBuilder;
         $this->scopeConfig = $scopeConfig;
+        $this->customerSession = $customerSession;
+
         parent::__construct($context);
     }
      /**
@@ -47,6 +52,14 @@ class Save extends Action
         $postObject->setData($post);
 
         // add validation code here
+        $customer = null;
+        $post['customer_id'] = null;
+        if ($this->customerSession->isLoggedIn()) {
+            $customer = $this->customerSession->getCustomer();
+            $post['email'] = $customer->getEmail();
+            $post['customer_id'] = $customer->getId();
+        }
+
         if (!\Zend_Validate::is(trim($post['email']), 'NotEmpty')) {
             $error = true;
             $message = 'name can not be empty';
@@ -61,7 +74,8 @@ class Save extends Action
         $comment->setEmail($email);
         $comment->setContent($content);
         $comment->setPostID($post_id);
-        $comment->setAvailableStatuses(true);
+        $comment->setCustomerId($post['customer_id']);
+        $comment->setAvailableStatuses(false);
 
         $comment->save();
 
