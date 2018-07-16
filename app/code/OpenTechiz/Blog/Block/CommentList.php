@@ -47,17 +47,18 @@ class CommentList extends \Magento\Framework\View\Element\Template implements
         // makes our block nice and re-usable! We could
         // pass the 'posts' data to this block, with a collection
         // that has been filtered differently!
-        if (!$this->hasData('comments')) {
+        if (!$this->hasData('cmt')) {
             $comments = $this->_commentCollectionFactory
                 ->create()
                 ->addFilter('post_id', $post_id)
+                ->addFilter('is_active', 1)
                 ->addOrder(
                     CommentInterface::CREATION_TIME,
                     CommentCollection::SORT_ORDER_DESC
                 );
-            $this->setData('comments', $comments);
+            $this->setData('cmt', $comments);
         }
-        return $this->getData('comments');
+        return $this->getData('cmt');
     }
 
     /**

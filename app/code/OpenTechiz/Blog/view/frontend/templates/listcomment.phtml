@@ -1,16 +1,32 @@
 <?php /** @var $block \OpenTechiz\Blog\Block\PostList */ ?>
+
 <h2><?php echo __('List comment') ?></h2>
-<ul class="blog-post-list">
+<!-- load comment ajax -->
+<!-- <ul class="blog-post-list" id="data">
+</ul> -->
+<hr>
+<script id="blog-comment" type="text/x-magento-template">
+    <li class="blog-post-list-item"><%- cmt.email %>
+        <div class="blog-post-item-content"><%- cmt.content %></div>
+        <div class="blog-post-item-meta">
+            <small>Created at: <%- cmt.creation_time %></small>
+        </div>
+    </li>
+</script>
+</ul>
+<!-- load cmt -->
+<ul class="blog-post-list" id="data">
     <?php /** @var $post \OpenTechiz\Blog\Model\Post */ ?>
-    <?php foreach ($block->getComments() as $comments): ?>
-        <?php //print_r($comments->getData()); ?>
+    <?php foreach ($block->getComments() as $cmt): ?>
+        <?php //print_r($cmt->getData()); ?>
         <li class="blog-post-list-item">
+            <?php echo $cmt->getEmail() ?>
             <div class="blog-post-item-content">
-                <?php echo $comments->getContent(); ?>
+                <?php echo $cmt->getContent(); ?>
             </div>
 
             <div class="blog-post-item-meta">
-                <strong><?php echo __('Created at:') ?></strong> <?php echo $comments->getCreationTime() ?>
+                <strong><?php echo __('Created at:') ?></strong> <?php echo $cmt->getCreationTime() ?>
             </div>
         </li>
     <?php endforeach; ?>

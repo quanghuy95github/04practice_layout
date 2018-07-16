@@ -108,8 +108,9 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
         return $this->setData(self::UPDATE_TIME, $update_time);
     }
 
-    public function setAvailableStatuses($status)
+    public function setAvailableStatuses($is_active)
     {
-        return $this->setData(self::STATUS, $status);
+        return $this->setData(self::IS_ACTIVE, $is_active);
     }
+
 }

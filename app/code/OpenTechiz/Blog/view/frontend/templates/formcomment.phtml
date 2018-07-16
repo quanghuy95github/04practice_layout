@@ -35,12 +35,13 @@
         </div>
     </div>
 </form>
-<?php $form_url = $block->getCommentAjaxAction(); ?>
 <script type="text/x-magento-init">
     {
         "*": {
             "OpenTechiz_Blog/js/commentajax": {
-                "AjaxCommentPostUrl": "<?php echo $form_url; ?>"
+                "AjaxCommentPostUrl": "<?php echo $block->getCommentAjaxAction(); ?>",
+                "AjaxCommentLoadUrl": "<?php echo $block->getAjaxUrl() ?>",
+                "AjaxPostId": "<?php echo $block->getPostID(); ?>"
             }
         }
     }

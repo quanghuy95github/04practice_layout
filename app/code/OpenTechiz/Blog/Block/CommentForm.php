@@ -43,5 +43,10 @@ class CommentForm extends \Magento\Framework\View\Element\Template
     public function getCommentAjaxAction()
     {
         return '/magento2_data/blog/comment/save';
-    }	
+    }
+
+    public function getAjaxUrl()
+    {
+        return '/magento2_data/blog/comment/load';
+    }
 }

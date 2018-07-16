@@ -61,6 +61,7 @@ class Save extends Action
         $comment->setEmail($email);
         $comment->setContent($content);
         $comment->setPostID($post_id);
+        $comment->setAvailableStatuses(true);
 
         $comment->save();
 
