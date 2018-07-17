@@ -11,6 +11,7 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
     const STATUS_ENABLED = 1;
     const STATUS_DISABLED = 0;
 
+    protected $_cacheTag = 'opentechiz_blog_comment';
     function __construct(
         \Magento\Framework\Model\Context $context,
         \Magento\Framework\Registry $registry,

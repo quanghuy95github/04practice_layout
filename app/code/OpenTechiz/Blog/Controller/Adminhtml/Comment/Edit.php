@@ -36,7 +36,7 @@ class Edit extends \Magento\Backend\App\Action
     {
         return $this->_authorization->isAllowed('OpenTechiz_Blog::comment_save');
     }
-
+    
     public function execute()
     {   
         $id = $this->getRequest()->getParam('comment_id');

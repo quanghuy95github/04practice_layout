@@ -56,7 +56,7 @@ class Approval implements ObserverInterface
         $noti->setCommentID($comment_id);
         $noti->setPostID($post_id);
         $noti->save();
-        // clean cache
+        clean cache
         $this->_cacheContext->registerEntities(\OpenTechiz\Blog\Model\Post::CACHE_TAG, [$post_id]);
         $this->_eventManager->dispatch('clean_cache_by_tags', ['object' => $this->_cacheContext]);
     }

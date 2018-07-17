@@ -84,6 +84,7 @@ class Save extends Action
             'email' => "quanghuy.tb.vn@gmail.com"
         ];
         // sendmail
+        /*
         $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
         $transport = $this->_transportBuilder
             ->setTemplateIdentifier($this->scopeConfig->getValue('blog/general/template', $storeScope))
@@ -99,7 +100,7 @@ class Save extends Action
             ->setReplyTo($email)        // email nhan reply
             ->getTransport()
             ->sendMessage();
-            
+        */
         // return nofication comment
         $jsonResultReaponse = $this->resultJsonFactory->create();
         if (!$error) {

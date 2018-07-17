@@ -3,9 +3,10 @@ namespace OpenTechiz\Blog\Block;
 
 use OpenTechiz\Blog\Api\Data\CommentInterface;
 use OpenTechiz\Blog\Model\ResourceModel\Comment\Collection as CommentCollection;
+use Magento\Framework\DataObject\IdentityInterface;
 
-class CommentList extends \Magento\Framework\View\Element\Template implements
-    \Magento\Framework\DataObject\IdentityInterface
+class CommentList extends \Magento\Framework\View\Element\Template implements IdentityInterface
+    
 {
     /**
      * @var \OpenTechiz\Blog\Model\ResourceModel\Post\CollectionFactory
@@ -66,8 +67,16 @@ class CommentList extends \Magento\Framework\View\Element\Template implements
      *
      * @return array
      */
+    // public function getIdentities()
+    // {
+    //     return [\OpenTechiz\Blog\Model\Comment::CACHE_TAG . '_' . 'list'];
+    // }
     public function getIdentities()
     {
-        return [\OpenTechiz\Blog\Model\Comment::CACHE_TAG . '_' . 'list'];
+        $identities = [];
+        foreach ($this->getComments() as $comment) {
+            $identities = array_merge($identities, $comment->getIdentities());
+        }
+        return $identities;
     }
 }

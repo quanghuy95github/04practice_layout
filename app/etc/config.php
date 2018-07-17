@@ -149,6 +149,7 @@ return [
     'Magento_WishlistSampleData' => 1,
     'Mageplaza_Core' => 1,
     'Mgt_DeveloperToolbar' => 1,
+    'OpenTechiz_Attribute' => 1,
     'OpenTechiz_Banner' => 1,
     'OpenTechiz_Blog' => 1,
     'ProgrammingAtKstark_CatewithimgWidget' => 1,

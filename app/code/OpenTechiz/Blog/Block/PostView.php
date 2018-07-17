@@ -1,8 +1,9 @@
 <?php
 namespace OpenTechiz\Blog\Block;
 
-class PostView extends \Magento\Framework\View\Element\Template implements
-    \Magento\Framework\DataObject\IdentityInterface
+use Magento\Framework\DataObject\IdentityInterface;
+
+class PostView extends \Magento\Framework\View\Element\Template implements IdentityInterface
 {
 
     /**
@@ -53,7 +54,7 @@ class PostView extends \Magento\Framework\View\Element\Template implements
      */
     public function getIdentities()
     {
-        return [\OpenTechiz\Blog\Model\Post::CACHE_TAG . '_' . $this->getPost()->getId()];
+        return $this->getPost()->getIdentities();
     }
 
 }
