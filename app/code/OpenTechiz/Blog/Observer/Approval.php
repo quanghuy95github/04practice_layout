@@ -27,6 +27,7 @@ class Approval implements ObserverInterface
     }
     public function execute(\Magento\Framework\Event\Observer $observer) {
         $comment = $observer->getData('comment');
+        var_dump($comment);die();
         $originalComment = $comment->getOrigData();
         $request = $observer->getData('request');
         // if admin create new comment then return
@@ -56,7 +57,7 @@ class Approval implements ObserverInterface
         $noti->setCommentID($comment_id);
         $noti->setPostID($post_id);
         $noti->save();
-        clean cache
+        //clean cache
         $this->_cacheContext->registerEntities(\OpenTechiz\Blog\Model\Post::CACHE_TAG, [$post_id]);
         $this->_eventManager->dispatch('clean_cache_by_tags', ['object' => $this->_cacheContext]);
     }

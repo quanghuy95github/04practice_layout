@@ -67,16 +67,14 @@ class CommentList extends \Magento\Framework\View\Element\Template implements Id
      *
      * @return array
      */
-    // public function getIdentities()
-    // {
-    //     return [\OpenTechiz\Blog\Model\Comment::CACHE_TAG . '_' . 'list'];
-    // }
     public function getIdentities()
     {
         $identities = [];
         foreach ($this->getComments() as $comment) {
             $identities = array_merge($identities, $comment->getIdentities());
         }
+        // lay nhan dai dien cho ca block comment
+        $identities[] = \OpenTechiz\Blog\Model\Post::CACHE_TAG . '_' . 'list';
         return $identities;
     }
 }
