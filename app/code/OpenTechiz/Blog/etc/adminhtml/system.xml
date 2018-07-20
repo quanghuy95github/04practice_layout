@@ -7,9 +7,9 @@
 			<label>Blog</label>
 			<tab>opentechiz</tab>
 			<resource>OpenTechiz_Blog::config_blog</resource>
-			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOder="1" type="text">
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" type="text">
 				<label>Comment form</label>
-				<field id="sender_email" showInDefault="1" showInStore="1" showInWebsite="1" sortOder="1" translate="label" type="select">
+				<field id="sender_email" showInDefault="1" showInStore="1" showInWebsite="1" translate="label" type="select">
 					<label>Email Sender</label>	
 					<source_model>Magento\Config\Model\Config\Source\Email\Identity</source_model>
 				</field>
